@@ -6,7 +6,7 @@ A collection of various discord-related tools.
 Sends multiple HTTP post requests to a webhook URL that will be able to send messages to the designated channel. It does have the ability to mention `@everyone`. This implies that it may have high amount of permissions, so some bots that perform guild-specific checks may actually be able to kick/ban members, although this has not been tested.
 
 #### Help
-```python
+```
 Usage: webhooker.py [-h] --webhook WEBHOOK --name NAME --avatar-url AVATAR_URL
                     --message MESSAGE [--count COUNT]
 
