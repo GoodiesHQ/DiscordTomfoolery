@@ -42,7 +42,7 @@ async def main():
     ap = ArgumentParser()
     ap.add_argument("--webhook", "-w", type=str, required=True, help="The Webhook URL")
     ap.add_argument("--name", "-n", type=str, required=True, help="The name you want to appear on the Bot")
-    ap.add_argument("--avatar-url", "-a", type=str, required=True, help="The avatar image file")
+    ap.add_argument("--avatar-url", "-a", type=str, default="", help="The avatar image file")
     ap.add_argument("--message", "-m", type=str, required=True, help="The content of the message")
     ap.add_argument("--count", "-c", type=int, default=10, help="The number of messages to spam.")
     args = ap.parse_args()
