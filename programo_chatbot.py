@@ -32,6 +32,7 @@ async def on_message(message):
     msg = ' '.join(message.content.split(' ')[1:])
     url = chatbot_url(message.author.id, msg)
     debug("URL: {}".format(url))
+    await client.send_typing()
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(url, timeout=10.0) as resp:
