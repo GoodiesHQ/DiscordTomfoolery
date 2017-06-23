@@ -26,7 +26,8 @@ async def join_server(api_url, token, sem):
             async with aiohttp.ClientSession() as session:
                 async with session.post(api_url, headers=create_headers(token), timeout=3.0) as resp:
                     if resp.status != 200:
-                        print("Failure: ({}) {}".format(rep.status, api_url))
+                        print("Failure: ({}) {}".format(resp.status, api_url))
+                        print(await resp.text())
     except Exception as e:
         print(e)
 
