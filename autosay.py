@@ -14,7 +14,7 @@ except ImportError:
 random = SystemRandom()
 loop = asyncio.get_event_loop()
 client = discord.Client(loop=loop)
-DEFAULT_MESSAGES = ("?", "lmao", "rofl", "hey", "??", "ayy", sup)
+DEFAULT_MESSAGES = ("?", "lmao", "rofl", "hey", "??", "ayy", "sup")
 AUTOSAYERS = dict()
 DEFAULT_PERIOD = 60.0
 AUTODELETE = True
