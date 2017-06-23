@@ -84,5 +84,4 @@ async def on_message(message):
 async def on_ready():
     print("Logged in as {} ({})".format(client.user.name, client.user.id))
 
-client.run("mfa.B8k_lVhXet3zszeAuMkkcIJNuxjaU3AhpPUBb2icsw2WGM5M8tvLaeoaCgMHa065CkEUX6YO2_x_1XQjdwbg", bot=False) #gitignore
 client.run("TOKEN", bot=False)
